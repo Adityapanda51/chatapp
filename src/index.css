@@ -1,0 +1,102 @@
+/* body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+} */
+
+.App {
+  display: flex;
+}
+
+.Sidebar {
+  width: 200px;
+  background-color: #f0f0f0;
+  padding: 20px;
+  transition: transform 0.3s ease;
+  transform: translateX(-220px);
+}
+
+.Sidebar.open {
+  transform: translateX(0);
+}
+
+.ChatContainer {
+  flex: 1;
+  padding: 20px;
+}
+
+.Header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.MessageThread {
+  overflow-y: auto;
+  max-height: 300px;
+}
+
+.Message {
+  margin-bottom: 10px;
+}
+
+.UserName {
+  font-weight: bold;
+}
+
+.MessageText {
+  margin-left: 5px;
+}
+
+.LikeButton {
+  margin-left: 10px;
+}
+
+.InputContainer {
+  display: flex;
+  margin-top: 20px;
+}
+
+.InputContainer input {
+  flex: 1;
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.InputContainer button {
+  margin-left: 10px;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: #fff;
+  cursor: pointer;
+}
+
+.InputContainer button:hover {
+  background-color: #0056b3;
+}
+
+.Sidebar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.Sidebar ul li {
+  padding: 5px 0;
+  cursor: pointer;
+}
+
+.Sidebar ul li:hover {
+  background-color: #ccc;
+}
